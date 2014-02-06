@@ -1,3 +1,13 @@
+set nocompatible           " be iMproved
+filetype off               " required!
+
+ste rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+"required!
+Bundle 'gmarik/vundle'
+
+
 set number
 
 " setting to allow solarized theme to show correct colors on ubuntu terminal
@@ -10,3 +20,8 @@ syntax on
 set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized
+
+" My bundles here:
+"
+"
+Bundle 'bling/vim-airline'
