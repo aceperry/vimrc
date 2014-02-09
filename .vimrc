@@ -7,7 +7,7 @@ call vundle#rc()
 "required!
 Bundle 'gmarik/vundle'
 
-
+set sw=4
 set number
 set laststatus=2
 
