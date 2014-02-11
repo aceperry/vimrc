@@ -12,7 +12,7 @@ set number
 set laststatus=2
 
 " setting to allow solarized theme to show correct colors on ubuntu terminal
-se t_Co=16
+set t_Co=16
 
 " Set syntax on
 syntax on
@@ -26,4 +26,4 @@ colorscheme solarized
 "
 "
 Bundle 'bling/vim-airline'
-
+Bundle 'git@github.com:altercation/vim-colors-solarized.git'
