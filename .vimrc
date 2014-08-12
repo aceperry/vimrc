@@ -2,7 +2,7 @@ set nocompatible           " be iMproved
 filetype off               " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 " let Vundle manage Vundle
 "required!
 Bundle 'gmarik/vundle'
@@ -22,8 +22,11 @@ set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized
 
-" My bundles here:
+" My Plugins here:
 "
 "
-Bundle 'bling/vim-airline'
-Bundle 'git@github.com:altercation/vim-colors-solarized.git'
+Plugin 'bling/vim-airline'
+Plugin 'git@github.com:altercation/vim-colors-solarized.git'
+Plugin 'fatih/vim-go'
+
+call vundle#end()
