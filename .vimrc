@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 " let Vundle manage Vundle
 "required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 set sw=4
 set number
