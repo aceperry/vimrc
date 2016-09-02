@@ -8,19 +8,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 set sw=4
+set relativenumber
 set number
 set laststatus=2
 
 " setting to allow solarized theme to show correct colors on ubuntu terminal
-" set t_Co=16
+set t_Co=16
 
 " Set syntax on
 syntax on
 
 " solarized theme
 " set background=dark
+set background=light
 " let g:solarized_termcolors=16
 " colorscheme solarized
+colorscheme solarized
 
 " My Plugins here:
 "
@@ -28,6 +31,7 @@ syntax on
 Plugin 'bling/vim-airline'
 " Plugin 'git@github.com:altercation/vim-colors-solarized.git'
 Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 call vundle#end()
 
