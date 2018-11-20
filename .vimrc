@@ -40,3 +40,8 @@ set sw=4
 set number
 set relativenumber
 set laststatus=2
+
+" Put color into lightline
+if !has('gui_running')
+  set t_Co=256
+endif
