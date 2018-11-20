@@ -1,40 +1,24 @@
 set nocompatible           " be iMproved
 filetype off               " required!
 
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" let Vundle manage Vundle
-"required!
-Plugin 'gmarik/Vundle.vim'
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-set sw=4
-set relativenumber
-set number
-set laststatus=2
-
-" setting to allow solarized theme to show correct colors on ubuntu terminal
-set t_Co=16
-
-" Set syntax on
-syntax on
-
-" solarized theme
-" set background=dark
-set background=light
-" let g:solarized_termcolors=16
-" colorscheme solarized
-colorscheme solarized
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " My Plugins here:
 "
 "
-Plugin 'bling/vim-airline'
+Plugin 'itchyny/lightline.vim'
 " Plugin 'git@github.com:altercation/vim-colors-solarized.git'
 Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'mdempsky/gocode'
 
-call vundle#end()
-
+call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -47,3 +31,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+" Set syntax on
+syntax on
+
+set sw=4
+set number
+set relativenumber
+set laststatus=2
